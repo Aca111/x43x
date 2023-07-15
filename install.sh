@@ -11,7 +11,7 @@ port=$(jq -r '.port' config.json)
 sni=$(jq -r '.sni' config.json)
 path=$(jq -r '.path' config.json)
 
-bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install --beta
+bash -c "$(curl -L https://github.com/Aca111/xi/raw/main/install-release.sh)" @ install --beta
 
 
 keys=$(xray x25519)
